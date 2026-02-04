@@ -1,28 +1,201 @@
-<!DOCTYPE html>
-<html lang="pt-br">
+<!doctype html>
+<html lang="pt-BR">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Bluew — Clareza em segundos</title>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Saiba o quanto você pode gastar hoje. Em 10 segundos. Para quem vive de renda variável." />
+  <title>Bluew • Clareza em 10 segundos</title>
 
-  <!-- CSS externo (será criado depois) -->
-  <link rel="stylesheet" href="/css/style.css">
+  <!-- Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="./css/style.css">
 </head>
 
 <body>
-  <div class="wrap">
-    <!-- Header -->
-    <div class="topbar">
-      <div class="avatar" title="Bluew">
-        <img src="./assets/logobluew_fundoazul.png" alt="Bluew" />
+
+<header>
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="#">
+        <img src="./assets/logobluew_fundoazul.png" alt="Logo Bluew" />
+        <span class="brand-name">Bluew</span>
+      </a>
+
+      <div class="nav-links">
+        <a href="#como-funciona">Como funciona</a>
+        <a href="#confianca">Confiança</a>
+        <a href="#ajuda">Ajuda</a>
       </div>
-    </div>
-
-    <!-- Área do chat -->
-    <div class="chat" id="chat"></div>
+    </nav>
   </div>
+</header>
 
-  <!-- JS externo (será criado depois) -->
-  <script src="/js/app.js"></script>
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-wrap">
+
+      <div class="hero-copy">
+        <div class="kicker">
+          <span class="kicker-dot"></span>
+          Para quem vive de renda variável
+        </div>
+
+        <h1>
+          Saiba o quanto você pode gastar hoje.
+          <span class="highlight"><br>Em 10 segundos.</span>
+        </h1>
+
+        <p class="lead">
+          Registre entradas e gastos rapidinho e veja seu
+          <strong class="night">saldo seguro do dia</strong>.
+          
+        </p>
+
+        <ul class="benefits">
+          <li>
+            <span class="check">✓</span>
+            Clareza imediata: você sabe quanto gastar sem culpa.
+          </li>
+          <li>
+            <span class="check">✓</span>
+            Sem planilhas. Sem susto no fim do mês.
+          </li>
+        </ul>
+
+        <div class="cta-row">
+          <button class="btn btn-primary" id="ctaHero">
+            Ver meu saldo do dia
+          </button>
+          <div class="subnote">
+            Grátis para começar • Sem compromisso
+          </div>
+        </div>
+      </div>
+
+      <div class="hero-media">
+
+  <div class="blob"></div>
+
+  <img class="phone phone-desktop"
+       src="./assets/Saiba o quanto você pode gastar hoje (1000 x 2100 px).png"
+       alt="Mockup do sistema desktop">
+
+  <img class="phone phone-mobile"
+       src="./assets/Saiba o quanto você pode gastar hoje (1000 x 2100 px).png"
+       alt="Mockup do sistema mobile">
+
+</div>
+
+
+    </div>
+  </div>
+</section>
+
+<section class="section" id="como-funciona">
+
+<div class="container features-container">
+
+<div class="features-copy">
+<h2>Tudo o que você precisa para viver no azul.</h2>
+<p>Três ações simples que trazem clareza todos os dias.</p>
+</div>
+
+<div class="features">
+
+<div class="card">
+<div class="icon">
+<img src="./assets/verificado.png" alt="">
+</div>
+<h3>Registre em segundos</h3>
+<p>Entradas e gastos em segundos do jeito que sua rotina permite.
+</p>
+<div class="step">01</div>
+</div>
+
+<div class="card">
+<div class="icon">
+<img src="./assets/subindo.png" alt="">
+</div>
+<h3>Veja seu saldo</h3>
+<p>Saiba exatamente quanto pode gastar hoje, sem fazer conta.
+</p>
+<div class="step">02</div>
+</div>
+
+<div class="card">
+<div class="icon">
+<img src="./assets/sino.png" alt="">
+</div>
+<h3>Receba alertas</h3>
+<p>A Bluew avisa 
+quando algo sai do planejado antes 
+que vire problema.</p>
+<div class="step">03</div>
+</div>
+
+</div>
+</div>
+</section>
+
+
+<footer>
+  <div class="container">
+    <div class="footer-box">
+
+      <div class="footer-top">
+
+        <div class="footer-cta">
+          <a class="brand" href="#">
+            <img src="./assets/logobluew_fundoazul.png" alt="Logo" />
+            <span class="brand-name">Bluew</span>
+          </a>
+
+          <p class="muted">Comece hoje e viva no azul.</p>
+
+          <button class="btn btn-primary" id="ctaFooter">
+            Ver meu saldo do dia
+          </button>
+
+          <div class="subnote">
+            Grátis • Sem cartão • Sem compromisso
+          </div>
+        </div>
+
+        <div class="footer-cols">
+
+          <div class="footer-col">
+            <h4>Confiança</h4>
+            <a href="#">Planos</a>
+            <a href="#">Privacidade</a>
+          </div>
+
+          <div class="footer-col">
+            <h4>Ajuda</h4>
+            <a href="#">Contato</a>
+            <a href="#">FAQ</a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        © <span id="year"></span> Bluew
+      </div>
+
+    </div>
+  </div>
+</footer>
+
+</main>
+
+<!-- JS externo -->
+<script src="./js/script.js"></script>
+
 </body>
 </html>

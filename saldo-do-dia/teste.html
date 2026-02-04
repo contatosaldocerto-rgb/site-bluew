@@ -1,0 +1,213 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Bluew Features</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<style>
+
+:root{
+--blue:#3A86F5;
+--air:#EAF2FF;
+--night:#1B3A57;
+--slate:#667085;
+--snow:#FAFBFD;
+}
+
+*{box-sizing:border-box;margin:0;padding:0;}
+
+body{
+font-family:Inter,system-ui;
+background:var(--snow);
+color:var(--night);
+}
+
+/* SEÇÃO */
+
+.section{
+position:relative;
+padding:110px 20px;
+overflow:hidden;
+}
+
+/* TRIÂNGULO — mantém tom suave */
+
+.section::before{
+content:"";
+position:absolute;
+left:0;
+top:0;
+bottom:0;
+width:80%;
+background:#E5EEFF;
+clip-path:polygon(0 0,100% 50%,0 100%);
+z-index:0;
+}
+
+/* CONTAINER */
+
+.container{
+max-width:1200px;
+margin:auto;
+position:relative;
+z-index:1;
+display:grid;
+gap:60px;
+align-items:center;
+}
+
+/* TEXTO — estilo original preservado */
+
+.features-copy{
+max-width:420px;
+}
+
+.features-copy h2{
+font-size:34px;
+font-weight:600;
+line-height:1.15;
+margin-bottom:14px;
+}
+
+.features-copy p{
+color:var(--slate);
+font-size:15px;
+}
+
+/* CARDS */
+
+.features{
+display:grid;
+gap:30px;
+}
+
+.card{
+background:rgba(234,242,255,.75);
+border-radius:28px;
+padding:48px 36px 60px;
+min-height:360px;padding:48px 36px 60px;
+min-height:360px;
+box-shadow:0 18px 40px rgba(0,0,0,.08);
+display:flex;
+flex-direction:column;
+justify-content:space-between;
+text-align:center;
+transition:.2s ease;
+}
+
+.card:hover{
+transform:translateY(-6px);
+box-shadow:0 26px 60px rgba(0,0,0,.12);
+}
+
+.icon img{
+height: 96px;
+margin-bottom: 20%;
+}
+
+.card h3{
+font-size:20px;
+font-weight:600;
+margin-top:0px;
+line-height:1.2;
+
+}
+
+.card p{
+color:var(--slate);
+font-size:14px;
+margin-top:75px;
+margin-bottom:20px;
+
+}
+
+.step{
+margin-top:28px;
+font-weight:500;
+opacity:.55;
+font-size:14px;
+letter-spacing:1px;
+}
+
+/* RESPONSIVO */
+
+@media(min-width:768px){
+
+.container{
+grid-template-columns:1fr 2fr;
+}
+
+.features{
+grid-template-columns:1fr 1fr 1fr;
+}
+
+}
+
+@media(max-width:767px){
+
+.section::before{
+display:none;
+}
+
+.features-copy{
+text-align:center;
+max-width:none;
+}
+
+}
+
+</style>
+</head>
+
+<body>
+
+<section class="section">
+
+<div class="container">
+
+<div class="features-copy">
+<h2>Tudo o que você precisa para viver no azul.</h2>
+<p>Três ações simples que trazem clareza todos os dias.</p>
+</div>
+
+<div class="features">
+
+<div class="card">
+<div class="icon">
+<img src="../assets/verificado.png" alt="">
+</div>
+<h3>Registre em segundos</h3>
+<p>Entradas e gastos em 5 segundos.</p>
+<div class="step">01</div>
+</div>
+
+<div class="card">
+<div class="icon">
+<img src="../assets/subindo.png" alt="">
+</div>
+<h3>Veja seu saldo</h3>
+<p>Saiba quanto pode gastar hoje.</p>
+<div class="step">02</div>
+</div>
+
+<div class="card">
+<div class="icon">
+<img src="../assets/sino.png" alt="">
+</div>
+<h3>Receba alertas</h3>
+<p>Evite problemas antes de acontecer.</p>
+<div class="step">03</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</body>
+</html>

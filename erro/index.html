@@ -1,0 +1,132 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Algo deu errado • Bluew</title>
+
+  <!-- Fonte (permitida) -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+
+  <!-- CSS externo -->
+  <link rel="stylesheet" href="/css/erro.css" />
+</head>
+
+<body>
+  <main class="wrap" role="main">
+    <section class="card" aria-labelledby="title">
+      <div class="top">
+        <!-- Coluna principal: mensagem (acolhimento + segurança) -->
+        <div class="hero">
+          <div class="badge" aria-label="Aviso gentil">
+            <!-- Ícone neutro (informativo, sem alarme) -->
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+              <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="#1B3A57" stroke-width="2" opacity="0.9"/>
+              <path d="M12 7.5v6" stroke="#1B3A57" stroke-width="2" stroke-linecap="round"/>
+              <path d="M12 17.2h.01" stroke="#1B3A57" stroke-width="3" stroke-linecap="round"/>
+            </svg>
+            Pagamento não concluído
+          </div>
+
+          <h1 id="title">Algo deu errado</h1>
+
+          <p class="lead">
+            Tá tudo bem — às vezes uma tentativa não finaliza como esperado. Vamos resolver de um jeito simples e calmo.
+          </p>
+
+          <!-- Reforço de segurança (sem detalhes técnicos) -->
+          <div class="panel" role="status" aria-live="polite">
+            <p><strong>Até o momento, não recebemos confirmação de cobrança nesta tentativa.</strong></p>
+            <p class="muted">Se algo for confirmado, você verá a confirmação na tela e/ou no seu e-mail.</p>
+            <p class="muted">Seus dados seguem protegidos durante todo o processo.</p>
+          </div>
+        </div>
+
+        <!-- Coluna lateral: ações (CTA principal + secundário) -->
+        <aside class="side" aria-label="Ações para continuar">
+          <div class="actions">
+            <!-- CTA principal: tentar novamente -->
+            <!-- Troque o href pelo link real do checkout/retentativa -->
+            <a class="btn btn-primary" href="RETRY_URL" aria-label="Tentar novamente o pagamento">
+              Tentar novamente
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M5 12h12" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round"/>
+                <path d="M13 6l6 6-6 6" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+            </a>
+
+            <!-- CTA secundário: WhatsApp -->
+            <!-- Troque o href pelo seu link real do WhatsApp (wa.me) -->
+            <a class="btn btn-secondary" href="WHATSAPP_URL" aria-label="Falar com suporte humano no WhatsApp">
+              Falar com suporte no WhatsApp
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M20 12a8 8 0 0 1-11.7 7.1L4 20l.95-4.3A8 8 0 1 1 20 12Z" stroke="#3A86F5" stroke-width="2" stroke-linejoin="round"/>
+                <path d="M8.6 10.8c.2 1 1.4 2.7 3.1 3.5 1.7.8 2.6.7 3.1.5.5-.2 1-.9 1.1-1.2.1-.3 0-.5-.2-.6l-1.2-.6c-.2-.1-.4-.1-.6.1l-.5.6c-.1.1-.3.2-.5.1-.7-.3-1.8-1.2-2.2-2-.1-.2 0-.4.1-.5l.5-.5c.2-.2.2-.4.1-.6l-.6-1.2c-.1-.2-.3-.3-.6-.2-.3.1-1 .6-1.2 1.1-.2.5-.3 1.4.0 2.6Z" fill="#3A86F5" opacity="0.25"/>
+              </svg>
+            </a>
+          </div>
+
+          <p class="micro">
+            <strong>Leva poucos segundos.</strong> Se preferir, você pode tentar de novo agora — sem complicação.
+          </p>
+
+          <div class="divider" aria-hidden="true"></div>
+
+          <!-- Orientações curtas (neutras e sem culpar) -->
+          <ul class="list" aria-label="Dicas rápidas">
+            <li class="item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10Z" stroke="#667085" stroke-width="2" opacity="0.7"/>
+                <path d="M8 12l2.5 2.5L16 9" stroke="#27AE60" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+              </svg>
+              Você pode tentar novamente com tranquilidade — o processo é rápido.
+            </li>
+
+            <li class="item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M4 7h16" stroke="#667085" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+                <path d="M7 11h10" stroke="#667085" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+                <path d="M10 15h4" stroke="#667085" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+              </svg>
+              Se quiser, fale com uma pessoa do suporte e a gente resolve junto.
+            </li>
+
+            <li class="item">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true">
+                <path d="M12 3l8 4v6c0 5-3.3 8.7-8 9-4.7-.3-8-4-8-9V7l8-4Z" stroke="#667085" stroke-width="2" opacity="0.7"/>
+                <path d="M12 7.5v6" stroke="#667085" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+                <path d="M12 16.8h.01" stroke="#667085" stroke-width="3" stroke-linecap="round" opacity="0.7"/>
+              </svg>
+              Seus dados seguem protegidos durante todo o processo.
+            </li>
+          </ul>
+        </aside>
+      </div>
+
+      <!-- Rodapé discreto -->
+      <footer class="footer" aria-label="Rodapé">
+        <div class="brand" aria-label="Bluew / Saldo Certo">
+          <span class="dot" aria-hidden="true"></span>
+          Bluew • Saldo Certo
+        </div>
+
+        <div class="links">
+          <!-- Opcional: links de navegação (sem criar novos CTAs principais) -->
+          <!-- Troque pelos links reais se fizer sentido -->
+          <a href="/" aria-label="Voltar para o início">Início</a>
+          <a href="WHATSAPP_URL" aria-label="Abrir suporte no WhatsApp">Suporte</a>
+        </div>
+      </footer>
+    </section>
+  </main>
+
+  <!-- Script opcional (mantido mínimo; sem detalhes técnicos) -->
+  <script>
+    // Opcional: se você quiser que "Tentar novamente" reabra a página anterior,
+    // substitua RETRY_URL por "javascript:history.back()" no botão.
+    // Mantemos neutro e simples para WordPress.
+  </script>
+</body>
+</html>
